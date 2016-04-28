@@ -1,0 +1,6 @@
+---
+- hosts: web
+  roles:
+    - webapp
+    - base_pkg 
+

@@ -1,0 +1,10 @@
+- name: ベースパッケージのインストール
+  yum: name={{item}} state=latest
+  with_items:
+    - dstat
+    - git
+    - tmux
+    - vim-enhanced
+    - yum-plugin-versionlock
+    - zsh
+

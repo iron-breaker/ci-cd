@@ -1,0 +1,7 @@
+- name: Apacheのインストール
+  yum: name={{item}} state=latest
+  with_items:
+    - httpd
+
+- name: Apacheを起動する
+  service: name=httpd enabled=yes state=started
